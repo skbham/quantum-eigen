@@ -1,8 +1,8 @@
-
 #!/bin/bash
 #SBATCH --job-name=multN
-#SBATCH --output=multN.txt
+#SBATCH --output=~/scratch/scripts/hpc/hw2/quantum-eigen/output/multN.txt
 #SBATCH --time=0:15:00
+#SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --partition=cpu-preempt
 
