@@ -123,5 +123,6 @@ if __name__ == '__main__':
 
 	# Run the eigenvalue solver
 	vals, vecs = solve_eigen(N=args['N'], potential=args['potential'], n_eigs=args['n_eigs'])
+	np.savetxt(f'./output/eigs_N{args['N']}.txt', vals)
 	print("Lowest 5 eigenvalues:", vals)
 
